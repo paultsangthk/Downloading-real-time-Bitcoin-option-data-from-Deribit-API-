@@ -122,5 +122,6 @@ while count < 3:
     # export equation to .csv -- append to existing
     equation_call.to_csv('export_csv/btc_option_equation_call.csv', index=0, mode='a',header=False)
     equation_put.to_csv('export_csv/btc_option_equation_put.csv', index=0, mode='a',header=False)
-    time.sleep(1)
+    #refresh every minute
+    time.sleep(60)
     count+=1
